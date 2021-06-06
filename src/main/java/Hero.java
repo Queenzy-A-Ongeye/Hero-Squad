@@ -36,6 +36,12 @@ public class Hero {
         return this.id;
     }
 
+    public static ArrayList<Hero> getAllInstances(){
+        return instance;
+    }
+
+    public
+
 
     public static Hero setUpNewHero(){
         return new Hero("Queen", 22, "fore-telling the future", "falling in love");
