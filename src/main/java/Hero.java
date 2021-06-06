@@ -1,3 +1,5 @@
+import com.sun.org.apache.bcel.internal.generic.PUSH;
+
 import java.util.ArrayList;
 
 public class Hero {
@@ -16,6 +18,13 @@ public class Hero {
         this.id = instance.size();
         instance.add(this);
     }
+
+    public static Hero findById(int id) {
+        return instance.get(id-1);
+    }
+
+//    public static Hero setUpNewHero2() {
+//    }
 
     public String getName(){
         return this.name;
@@ -40,10 +49,21 @@ public class Hero {
         return instance;
     }
 
-    public
+    public static void clearAllHeroes(){
+        instance.clear();
+    }
+
 
 
     public static Hero setUpNewHero(){
-        return new Hero("Queen", 22, "fore-telling the future", "falling in love");
+        return new Hero("Queen", 22, "fore-telling the future", "falling in love", 3);
+    }
+
+    public static Hero setUpNewHero1(){
+        return new Hero("Tyler", 20, "fighting", "water", 3);
+    }
+
+    public static Hero setUpNewHero2(){
+        return new Hero("Alan", 25, "Killing", "fallind in love", 4);
     }
 }
