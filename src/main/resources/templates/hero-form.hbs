@@ -1,0 +1,19 @@
+{{#partial "title" }}
+    Create your Hero!
+{{/partial}}
+
+<!--form.hbs.-->
+{{#partial "content"}}
+
+    <h1>Fill to create your hero!</h1>
+    <form action='/new/hero'>
+       <input type="text" placeholder="Enter hero's name" name="name" required>
+        <input type="number" placeholder="Enter age" name="age" required>
+        <input type="text" placeholder="Enter hero's power" name="power" required>
+        <input type="text" placeholder="Enter hero's weakness" neme="weakness" required>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+    <!--form.hbs.-->
+{{/partial}}
+
+{{> layout.hbs}}

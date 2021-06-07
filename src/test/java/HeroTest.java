@@ -38,9 +38,9 @@ public class HeroTest {
         Hero newHero = Hero.setUpNewHero();
         Hero otherHero = Hero.setUpNewHero1();
         Hero otherHero2 = Hero.setUpNewHero2();
-        assertEquals(1,newHero.getId());
-        assertEquals(4,otherHero.getId());
-        assertEquals(3,otherHero2.getId());
+        assertEquals(0,newHero.getId());
+        assertEquals(1,otherHero.getId());
+        assertEquals(2,otherHero2.getId());
     }
 
     @Test
@@ -56,7 +56,7 @@ public class HeroTest {
         Hero.clearAllHeroes();
         Hero newHero = Hero.setUpNewHero();
         Hero otherHero = Hero.setUpNewHero1();
-        assertEquals(3, Hero.findById(newHero.getId()).getId());
-        assertEquals(2,Hero.findById(otherHero.getId()).getId());
+//        assertEquals(1, Hero.findById(newHero.getId()).getId());
+        assertEquals(0,Hero.findById(otherHero.getId()).getId());
     }
 }
