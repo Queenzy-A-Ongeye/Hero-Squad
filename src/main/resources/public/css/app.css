@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
 /************
    OVERALL
 ************/   
@@ -9,4 +11,27 @@ body{
    background-position: center;
    background-attachment: fixed;
    height: 100%;
+}
+
+nav > ul li a{
+   list-style: none;
+   text-align: right;
+}
+
+/***********
+   Index.hbs
+   ******/
+
+.lom h2{
+   font-size: 50px;
+   font-family: 'Viaoda Libre', cursive;
+}
+.lom h3{
+   font-size: 40px;
+   font-family: 'Lobster', cursive;
+}
+.lom{
+   height: 400px;
+   width: 550px;
+   display: block;
 }
