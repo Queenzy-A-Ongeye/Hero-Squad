@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="1" name="HeroTest" time="0.022" errors="0" skipped="0">
+<testsuite tests="8" failures="1" name="HeroTest" time="0.015" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.11+9"/>
@@ -62,13 +62,13 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="HeroTest" name="newHero_getWeakness_String" time="0.009"/>
+  <testcase classname="HeroTest" name="newHero_getWeakness_String" time="0.005"/>
   <testcase classname="HeroTest" name="newHero_getName_String" time="0"/>
   <testcase classname="HeroTest" name="newHero_getId_Int" time="0"/>
   <testcase classname="HeroTest" name="newHero_instantiatesCorrectly_true" time="0"/>
   <testcase classname="HeroTest" name="newHero_getPower_String" time="0"/>
   <testcase classname="HeroTest" name="newHero_getAge_Int" time="0"/>
-  <testcase classname="HeroTest" name="newHero_findById_id" time="0.012">
+  <testcase classname="HeroTest" name="newHero_findById_id" time="0.01">
     <failure message="expected:&lt;0&gt; but was:&lt;1&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0&gt; but was:&lt;1&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -106,5 +106,5 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="HeroTest" name="newHero_getAllInstances_true" time="0.001"/>
+  <testcase classname="HeroTest" name="newHero_getAllInstances_true" time="0"/>
 </testsuite>
