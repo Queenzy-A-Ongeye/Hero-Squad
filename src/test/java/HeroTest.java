@@ -57,6 +57,6 @@ public class HeroTest {
         Hero newHero = Hero.setUpNewHero();
         Hero otherHero = Hero.setUpNewHero1();
 //        assertEquals(1, Hero.findById(newHero.getId()).getId());
-        assertEquals(0,Hero.findById(otherHero.getId()).getId());
+        assertEquals(1,Hero.findById(otherHero.getId()).getId());
     }
 }

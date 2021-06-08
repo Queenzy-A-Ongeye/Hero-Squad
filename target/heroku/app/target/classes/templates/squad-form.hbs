@@ -1,0 +1,24 @@
+{{#partial "title" }}
+    Create your Squad!
+{{/partial}}
+
+<!--form.hbs.-->
+{{#partial "content"}}
+
+   <div class="card">
+       <div class="card-title">
+           <h1>Fill to create your Squad!</h1>
+       </div>
+       <div class="card-body">
+           <form action='/new/squad' method="post">
+               <input type="text" placeholder="Enter squad name" name="name" required>
+               <input type="number" placeholder="Enter number of members" name="size" required>
+               <input type="text" placeholder="Enter Squad's quest" name="quest" required>
+               <button type="submit" class="btn-success">Submit</button>
+           </form>
+       </div>
+   </div>
+    <!--form.hbs.-->
+{{/partial}}
+
+{{> layout.hbs}}

@@ -1,0 +1,1 @@
+web : ./build/install/squads-hero/bin/squads-hero
