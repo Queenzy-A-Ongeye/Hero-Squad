@@ -13,9 +13,14 @@ body{
    height: 100%;
 }
 
-nav > ul li a{
+ ul,li{
    list-style: none;
-   text-align: right;
+   text-align: center;
+   display: inline-block;
+}
+li, a{
+    font-size: 25px;
+    font-family: 'Viaoda Libre', cursive;
 }
 
 /***********
@@ -24,14 +29,16 @@ nav > ul li a{
 
 .lom h2{
    font-size: 50px;
-   font-family: 'Viaoda Libre', cursive;
+
 }
 .lom h3{
    font-size: 40px;
    font-family: 'Lobster', cursive;
 }
 .lom{
-   height: 400px;
-   width: 550px;
+   height: 700px;
+   width: 600px;
    display: block;
+   align-items: center;
+   right: -40%;
 }
