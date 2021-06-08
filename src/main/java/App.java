@@ -84,6 +84,14 @@ public class App {
             return new ModelAndView(model, "squad-form.hbs");
         }, new HandlebarsTemplateEngine());
 
+        get("/new/member/:squadId",(req,res)->{
+            Map<String, Object> model = new HashMap<>();
+            req.session().attribute("selectedSquad",req.params("squadId"));
+            model.put("selectedSquad", req.session().attribute("selectedSquad"));
+            model.put("item",1);
+            return new ModelAndView(model, "success.hbs");
+        },new HandlebarsTemplateEngine());
+
         get("/squad/new/:id",(req,res)->{
             Map<String, Object> model = new HashMap<>();
             int id= Integer.parseInt(req.params(":id"));
@@ -92,8 +100,10 @@ public class App {
             newSquad.setSquadMembers(newMember);
             model.put("item", newMember.getName());
             model.put("newHero",newSquad.getSquadName());
-            return new ModelAndView(model, "success.hbs");
+            return new ModelAndView(model, "squad-form.hbs");
         }, new HandlebarsTemplateEngine());
+
+
 
     }
 }
