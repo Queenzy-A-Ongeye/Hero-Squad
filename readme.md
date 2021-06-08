@@ -24,4 +24,4 @@ The project is a Java web application built with the spark framework whereby a p
 View [LIVE] (https://github.com/Queen-01/Hero-Squad.git)
 
 ### License
-This project is under MIT (License) license.
+This project is under MIT (license) license.
