@@ -9,6 +9,7 @@ version '1.0-SNAPSHOT'
 mainClassName = 'App'
 sourceCompatibility = 1.8
 
+
 repositories {
     mavenCentral()
 }
@@ -19,3 +20,8 @@ dependencies {
     implementation "com.sparkjava:spark-template-handlebars:2.5.5"
     implementation 'org.slf4j:slf4j-simple:1.7.21'
 }
+
+applicationName = 'squads-hero'
+archivesBaseName = " squads-hero"
+defaultTasks = ['clean']
+task stage(dependsOn: ['clean', 'installDist'])

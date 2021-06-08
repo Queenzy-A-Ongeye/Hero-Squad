@@ -1,0 +1,34 @@
+{{#block "header"}}
+    <!DOCTYPE html>
+    <html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{{#block "title"}}Hero Squad{{/block}}</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/app.css">
+    </head>
+
+    <body>
+    <header class="nav-bar">
+        <ul class="nav-tabs">
+            <li><a href="/" class="nav-items nav-link">Home</a></li>
+           <li><a href="/hero" class="nav-items nav-link">Heroes</a></li>
+            <li><a href="/squad" class="nav-items nav-link">Squads</a></li>
+        </ul>
+
+    </header>
+    <div class="container">
+            {{#block "content"}}
+            {{/block}}
+    </div>
+    {{#block "footer"}}
+    {{/block}}
+    </body>
+    </html>
+{{/block}}

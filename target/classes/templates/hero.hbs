@@ -1,0 +1,31 @@
+{{#partial "content"}}
+    <section class="landing-pg">
+        <div class="land-left">
+        </div>
+        <div class="land-right">
+        </div>
+        <h2>CURRENT HEROES</h2>
+            <button type="submit" class="btn-outline"><a href="/form" >Create Your Hero</a></button>
+        <div class="heroes">
+            {{#each hero}}
+                <img src="/image/puff.jpeg" alt="">
+               <div class="row">
+                   <div class="col-md-6">
+                       <div class="card">
+                           <div class="card-body hero-item">
+                               <p class="card-test">Name: {{ name }} </p>
+                               <p class="card-text">Age: {{ age }}</p>
+                               <p class="card-text">Special power: {{ power }}</p>
+                               <p class="card-text">Weakness: {{ weakness }}</p>
+                               <p class="card-text">Id: {{ id }}</p>
+<!--                               <button type="submit" class="btns-success"><a href="new/{{id}}" >Learn More</a></button>-->
+                               <button type="submit" class="btns-primary"><a href="/squad-form">Add {{ name }} To Squad</a></button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            {{/each}}
+        </div>
+    </section>
+{{/partial}}
+{{> layout.hbs}}
